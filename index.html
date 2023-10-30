@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div>
+        <div class="heading-container" id="heading">
+            <!-- <h1 class="heading">Music App</h1> -->
+            <span class="toggle-container">
+                <button id="toggle-btn">Dark</button>
+            </span>
+            <h1 class="heading">Music App</h1>
+        </div>
+        <div class="card-container" id="card-container">
+            <div class="card1">
+                <div class="genre" id="genre">
+                    <h3 class="filter" id="filter">Filter By Genre: </h3>
+                    <select name="" id="dropdown" class="dropdown">
+                    </select>
+                </div>
+                <div class="list" id="list">
+                    <h2>All Songs</h2>
+                    <ul class="songs" id="songs"></ul>
+                    <audio id="audioPlayer"></audio>
+                </div>
+            </div>
+            
+            <div class="card2">
+                <div class="song-container" id="song-container">
+                    <img src="./images/big_image.jpg" alt="" class="image" id="image">
+                    <h3 class="song-name" id="song-name"></h3>
+                    <p class="singer-name" id="singer-name"></p>
+                </div>
+                <div class="play-content" id="play-content">
+                    <div class="four-btn" id="four-btn">
+                        <button class="playpause" id="playpause">
+                            <img src="./images/play.png" alt="" class="playimg" id="playimg">    
+                        </button>
+                        <progress id="progressBar" value="0" max="100"></progress>
+                        <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+                    </div>
+                </div>
+                <div class="two-btn" id="two-btn">
+                    <Button class="prev" id="prev">prev</Button>
+                    <button class="next" id="next">next</button>
+                </div>
+                <div class="one-btn" id="one-btn">
+                    <button class="Add" id="Add">Add To playlist</button>
+                </div>
+            </div>
+            
+            <div class="card3">
+                <div class="two-btn inside-card3">
+                    <input type="text" class="inputPlaylist" id="inputPlaylist" placeholder="Enter playlist name">
+                    <button class="createPlaylist" id="createPlaylist">Create Playlist</button>
+                </div>
+                <div class="currentPlaylist" id="currentPlaylist">
+                    <h3 class="allhead">Current Playlist</h3>
+                    <ul id="songsInSelectedPlaylist"></ul>
+                </div>
+                <div class="allPlaylist" id="allPlaylist">
+                    <h3 class="allHead">All Playlist</h3>
+                    <ul class="playlistList" id="playlistList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
